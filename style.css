@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(246, 245, 244);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.time {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #00000050);
+}
+
+.time span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* these properties will added in span 1 like hour, min, sec, period */
+.time span:nth-child(1) {
+  width: 180px;
+  height: 50px;
+  color: #faf8f8;
+  background-color: #4951a9;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.time:nth-of-type(2) span:nth-child(1) {
+  background-color: #6fb40a;
+}
+
+.time:nth-of-type(3) span:nth-child(1) {
+  background-color: #7b0ab4;
+}
+.time:nth-of-type(4) span:nth-child(1) {
+  background-color: #e6597c;
+}
+/* thses properties will be added in div 2nd child means span 2 with id and value 00  */
+.time span:nth-child(2) {
+  height: 150px;
+  color: #faf8f8;
+  background-color: #7482c2;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.time:nth-of-type(2) span:nth-child(2) {
+  background-color: #bee08c;
+}
+.time:nth-of-type(3) span:nth-child(2) {
+  background-color: #d6b0ee;
+}
+.time:nth-of-type(4) span:nth-child(2) {
+  background-color: #b985b4;
+}
